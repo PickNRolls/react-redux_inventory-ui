@@ -1,0 +1,36 @@
+.layout-control {
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.layout-control__option {
+  width: 60px;
+  height: 40px;
+  background: none;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+  padding-top: 2px;
+}
+
+.layout-control__option--active {
+  background: #fff;
+}
+
+.layout-control__option:first-child {
+  border-right: none;
+
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  padding-left: 6px;
+}
+
+.layout-control__option:last-child {
+  border-left: none;
+
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  padding-right: 6px;
+}

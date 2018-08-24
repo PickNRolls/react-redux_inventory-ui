@@ -13,7 +13,7 @@ var SortPanel = (props) => {
   return (
     <section className="sort-panel">
       <div className="container">
-        <AccentButton>
+        <AccentButton className="sort-panel__accent-button">
           Добавить предмет
         </AccentButton>
         <LayoutControl />
