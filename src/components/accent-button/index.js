@@ -1,8 +1,12 @@
 import React from 'react';
 
+import './main.css';
+
 var AccentButton = (props) => {
   return (
-    null
+    <button className="accent-button">
+      {props.children}
+    </button>
   );
 }
 

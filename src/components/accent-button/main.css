@@ -1,0 +1,12 @@
+.accent-button {
+  width: 200px;
+  height: 40px;
+  border-radius: 30px;
+  background: linear-gradient(to left, #39FA90, #19D191);
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  cursor: pointer;
+}
