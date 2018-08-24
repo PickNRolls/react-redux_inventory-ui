@@ -1,0 +1,18 @@
+.profile-dropdown__view {
+  display: flex;
+  align-items: center;
+}
+
+.profile-dropdown__name {
+  font-size: 16px;
+  color: #919191;
+  font-weight: 300;
+  margin-right: 9px;
+}
+
+.profile-dropdown__ava {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
