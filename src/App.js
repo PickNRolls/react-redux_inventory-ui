@@ -3,7 +3,7 @@ import './App.css';
 
 // Components
 
-import AppHeader from './components/app-header';
+import AppHeader from './layout/app-header';
 
 class App extends Component {
   render() {

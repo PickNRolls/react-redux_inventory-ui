@@ -8,6 +8,7 @@
 
 body {
   font-family: Lato, Roboto, sans-serif;
+  background: #F9F9FB;
 }
 
 .container {
@@ -15,3 +16,12 @@ body {
   padding: 0 35px;
   margin: 0 auto;
 }
+
+/*
+
+  Accent: #01A9FC
+  Second Accent Gradient:
+    #39FA90 @ 0%
+    #19D191 @ 100%
+
+*/

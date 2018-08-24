@@ -5,7 +5,8 @@ import './main.css';
 
 // Components
 
-import TopNav from '../top-nav';
+import TopNav from '../../components/top-nav';
+import ProfileDropdown from '../../components/profile-dropdown';
 
 var AppHeader = () => {
   return (
@@ -17,6 +18,8 @@ var AppHeader = () => {
         </Link>
 
         <TopNav />
+
+        <ProfileDropdown />
       </div>
     </header>
   );
