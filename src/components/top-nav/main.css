@@ -1,0 +1,28 @@
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  font-size: 18px;
+}
+
+.top-nav__item {
+  margin-right: 35px;
+}
+
+.top-nav__item--active .top-nav__link {
+  color: #01a9fc;
+  border-bottom-color: #01a9fc;
+}
+
+.top-nav__item:last-child {
+  margin-right: 0;
+}
+
+.top-nav__link {
+  display: block;
+  height: 100%;
+  color: #000;
+  line-height: 22px;
+  padding: 28px 2px 23px;
+  border-bottom: 3px solid transparent;
+}
