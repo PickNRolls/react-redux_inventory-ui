@@ -1,0 +1,22 @@
+.app-header {
+  height: 80px;
+  background: #fff;
+}
+
+.app-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-header__logo {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  height: 33px;
+}
+
+.app-header__logo img:first-child {
+  margin-right: 13px;
+  padding-bottom: 4px;
+}

@@ -9,3 +9,9 @@
 body {
   font-family: Lato, Roboto, sans-serif;
 }
+
+.container {
+  height: 100%;
+  padding: 0 35px;
+  margin: 0 auto;
+}
