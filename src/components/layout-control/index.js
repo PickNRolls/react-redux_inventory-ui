@@ -13,7 +13,7 @@ var LayoutControl = (props) => {
           className="layout-control__option-icon"
           data="img/layout-control.svg"
           alt=""
-        />
+        >Your browser doesn't support object tag</object>
       </button>
       <button className="layout-control__option">
         <object
@@ -21,7 +21,7 @@ var LayoutControl = (props) => {
           className="layout-control__option-icon"
           data="img/layout-control2.svg"
           alt=""
-        />
+        >Your browser doesn't support object tag</object>
       </button>
       <button className="layout-control__option">
         <object
@@ -29,7 +29,7 @@ var LayoutControl = (props) => {
           className="layout-control__option-icon"
           data="img/layout-control3.svg"
           alt=""
-        />
+        >Your browser doesn't support object tag</object>
       </button>
     </div>
   );

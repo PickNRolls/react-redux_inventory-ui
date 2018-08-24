@@ -1,0 +1,22 @@
+.search-input-wrap {
+  position: relative;
+  border-radius: 20px;
+}
+
+.search-input-wrap__image {
+  position: absolute;
+  left: 13px;
+  top: 10px;
+}
+
+.search-input {
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #f1f1f1;
+  background: none;
+  font-size: 16px;
+  text-indent: 41px;
+  color: #bcbcbc;
+}
+
