@@ -14,7 +14,15 @@ class App extends Component {
         <AppHeader />
         <SortPanel />
         <Sidebar
-          categories={[{title: 'Все категории'}, {title: 'Электроника'}]}
+          categories={[{
+            img: 'img/icons/all.svg',
+            title: 'Все категории',
+            route: '/goods'
+          }, {
+            img: 'img/icons/1.svg',
+            title: 'Электроника',
+            route: '/goods/electonic'
+          }]}
         />
       </div>
     );

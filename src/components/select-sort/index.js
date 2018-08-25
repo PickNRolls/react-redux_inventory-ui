@@ -16,7 +16,7 @@ class SelectSort extends Component {
           <span className="select-sort__sort-by">по возрастанию цены</span>
           <img
             className="select-sort__arrow"
-            src="img/arrow.svg"
+            src="img/icons/arrow.svg"
             alt=""
           />
         </div>

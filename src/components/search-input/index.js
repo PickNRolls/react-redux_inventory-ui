@@ -12,7 +12,7 @@ class SearchInput extends Component {
       <div className={this.props.className}>
         <img
           className="search-input-wrap__image"
-          src="img/search-icon.png"
+          src="img/icons/search-icon.png"
           alt="search"
         />
         <input

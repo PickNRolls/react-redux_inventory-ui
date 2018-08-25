@@ -12,7 +12,7 @@ class TopNav extends Component {
     return (
       <ul className={this.props.className}>
         <li className="top-nav__item">
-          <Link to="/items" className="top-nav__link">
+          <Link to="/goods" className="top-nav__link">
             Предметы
           </Link>
         </li>

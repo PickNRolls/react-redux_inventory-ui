@@ -18,7 +18,7 @@ class ProfileDropdown extends Component {
             alt=""
           />
           <img
-            src="img/arrow.svg"
+            src="img/icons/arrow.svg"
             alt=""
           />
         </div>
