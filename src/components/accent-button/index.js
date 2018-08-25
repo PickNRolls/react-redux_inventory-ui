@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
+
+// HOC
+
+import withCustomClassName from '../../HOC/withCustomClassName';
 
 import './main.css';
 
-var AccentButton = (props) => {
-  var className = 'accent-button';
-  if (props.className) className += ` ${props.className}`;
-
-  return (
-    <button className={className}>
-      {props.children}
-    </button>
-  );
+class AccentButton extends Component {
+  render() {
+    return (
+      <button className={this.props.className}>
+        {this.props.children}
+      </button>
+    );
+  }
 }
 
-export default AccentButton;
+export default withCustomClassName(AccentButton, 'accent-button');

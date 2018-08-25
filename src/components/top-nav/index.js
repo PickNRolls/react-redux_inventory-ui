@@ -1,31 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+
+// HOC
+
+import withCustomClassName from '../../HOC/withCustomClassName';
 
 import './main.css';
 
-var TopNav = (props) => {
-  var className = 'top-nav';
-  if (props.className) className += ` ${props.className}`;
-
-  return (
-    <ul className={className}>
-      <li className="top-nav__item">
-        <Link to="/items" className="top-nav__link">
-          Предметы
-        </Link>
-      </li>
-      <li className="top-nav__item">
-        <Link to="/places" className="top-nav__link">
-          Места
-        </Link>
-      </li>
-      <li className="top-nav__item">
-        <Link to="/people" className="top-nav__link">
-          Люди
-        </Link>
-      </li>
-    </ul>
-  );
+class TopNav extends Component {
+  render() {
+    return (
+      <ul className={this.props.className}>
+        <li className="top-nav__item">
+          <Link to="/items" className="top-nav__link">
+            Предметы
+          </Link>
+        </li>
+        <li className="top-nav__item">
+          <Link to="/places" className="top-nav__link">
+            Места
+          </Link>
+        </li>
+        <li className="top-nav__item">
+          <Link to="/people" className="top-nav__link">
+            Люди
+          </Link>
+        </li>
+      </ul>
+    );
+  }
 }
 
-export default TopNav;
+export default withCustomClassName(TopNav, 'top-nav');
