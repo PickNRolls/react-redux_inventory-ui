@@ -19,7 +19,7 @@ var AppHeader = () => {
 
         <TopNav className="app-header__top-nav" />
 
-        <ProfileDropdown />
+        <ProfileDropdown className="app-header__profile" />
       </div>
     </header>
   );

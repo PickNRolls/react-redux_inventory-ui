@@ -16,6 +16,7 @@
   width: 180px;
   height: 33px;
   margin-right: auto;
+  margin-left: 19px;
 }
 
 .app-header__logo img:first-child {
@@ -27,4 +28,8 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.app-header__profile {
+  margin-right: 19px;
 }
