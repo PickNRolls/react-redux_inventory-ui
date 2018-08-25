@@ -24,6 +24,7 @@ export default store;
     responsibleId: 'oaet12duDkb1421aoe'
   }
 
+
   People state
   {
     id: 'oaet12duDkb1421aoe',
@@ -37,6 +38,7 @@ export default store;
     goodsIds: ['oe345HTkoetn82Hent']
   }
 
+
   Places state
   {
     id: 'ktheiu24snauh',
@@ -44,8 +46,19 @@ export default store;
     street: 'ул. Мира, 24'
   }
 
+
+  UI state
+  {
+    layoutView: 0 or 1 or 2 - LayoutControl Component button index
+  }
+
   Store state
   {
+    UI: {
+      layoutView: 0
+    },
+
+
     goodsById: {
       'oe345HTkoetn82Hent': {
         id: oe345HTkoetn82Hent,

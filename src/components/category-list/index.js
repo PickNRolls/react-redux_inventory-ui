@@ -13,7 +13,7 @@ import './main.css';
 class CategoryList extends Component {
   render() {
     var categories = this.props.categories.map((category) => {
-      return <Category data={category} />;
+      return <Category data={category} key={category.title} />;
     });
 
     return (

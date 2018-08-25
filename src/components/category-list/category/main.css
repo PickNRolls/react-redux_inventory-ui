@@ -14,10 +14,21 @@
 
 .category-list__link {
   display: flex;
+  align-items: center;
   outline: none;
   color: #000;
 }
 
+.category-list__image-wrap {
+  min-width: 33px;
+  height: 30px;
+  position: relative;
+  margin-right: 10px;
+}
+
 .category-list__image {
-  margin-right: 14px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
