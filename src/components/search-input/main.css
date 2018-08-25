@@ -10,13 +10,14 @@
 }
 
 .search-input {
-  width: 280px;
+  width: 290px;
   height: 40px;
   border-radius: 20px;
   border: 1px solid #f1f1f1;
   background: none;
-  font-size: 16px;
-  text-indent: 41px;
+  font-size: 15px;
+  padding-left: 47px;
+  padding-right: 20px;
   color: #bcbcbc;
 }
 

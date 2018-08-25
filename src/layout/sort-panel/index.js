@@ -18,7 +18,7 @@ var SortPanel = (props) => {
         </AccentButton>
         <LayoutControl />
         <SearchInput className="sort-panel__search-input" />
-        <SelectSort />
+        <SelectSort className="sort-panel__select-sort" />
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 .app-header {
   height: 80px;
   background: #fff;
+  position: relative;
 }
 
 .app-header .container {
@@ -14,9 +15,16 @@
   align-items: center;
   width: 180px;
   height: 33px;
+  margin-right: auto;
 }
 
 .app-header__logo img:first-child {
   margin-right: 13px;
   padding-bottom: 4px;
+}
+
+.app-header__top-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }

@@ -1,3 +1,7 @@
+.profile-dropdown {
+  cursor: pointer;
+}
+
 .profile-dropdown__view {
   display: flex;
   align-items: center;

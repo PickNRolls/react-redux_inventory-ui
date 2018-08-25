@@ -17,7 +17,7 @@ var AppHeader = () => {
           <img src="img/Inventory.png" alt="Inventory"/>
         </Link>
 
-        <TopNav />
+        <TopNav className="app-header__top-nav" />
 
         <ProfileDropdown />
       </div>
