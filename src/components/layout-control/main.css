@@ -13,6 +13,10 @@
   padding-top: 2px;
 }
 
+.layout-control__option::-moz-focus-inner {
+  border: none;
+}
+
 .layout-control__option--active {
   background: #fff;
 }

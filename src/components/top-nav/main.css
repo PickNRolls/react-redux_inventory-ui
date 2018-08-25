@@ -25,4 +25,9 @@
   line-height: 22px;
   padding: 28px 2px 23px;
   border-bottom: 3px solid transparent;
+  outline: none;
+}
+
+.top-nav__link::-moz-focus-inner {
+  border: none;
 }
