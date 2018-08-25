@@ -5,6 +5,7 @@ import './App.css';
 
 import AppHeader from './layout/app-header';
 import SortPanel from './layout/sort-panel';
+import Sidebar from './layout/sidebar';
 
 class App extends Component {
   render() {
@@ -12,6 +13,9 @@ class App extends Component {
       <div className="App">
         <AppHeader />
         <SortPanel />
+        <Sidebar
+          categories={[{title: 'Все категории'}, {title: 'Электроника'}]}
+        />
       </div>
     );
   }
