@@ -1,8 +1,7 @@
 .tile-layout {
-  min-height: 590px;
+  min-height: 570px;
   padding: 30px;
   padding-bottom: 0;
-  margin-bottom: -20px;
 }
 
 .tile-layout__row {
@@ -11,7 +10,6 @@
 
 .tile-layout__row .tile-goods:last-child {
   margin-right: 0;
-  float: right;
 }
 
 .tile-goods {
