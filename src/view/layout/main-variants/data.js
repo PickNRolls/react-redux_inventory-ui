@@ -1,35 +1,42 @@
 export default [{
-  img: 'img/goods/3.jpg',
-  title: 'Sony Dualshock 5',
+  id: 'oeukjnt23qh',
+  previewImage: 'img/goods/3.jpg',
+  name: 'Sony Dualshock 5',
   price: 6000
 },
 {
-  img: 'img/goods/3.jpg',
-  title: 'Sony Dualshock 5',
+  id: 'oaouie21',
+  previewImage: 'img/goods/3.jpg',
+  name: 'Sony Dualshock 5',
   price: 6000
 },
 {
-  img: 'img/goods/3.jpg',
-  title: 'Sony Dualshock 5',
+  id: 'uedo.py.oeua',
+  previewImage: 'img/goods/3.jpg',
+  name: 'Sony Dualshock 5',
   price: 6000
 },
 {
-  img: 'img/goods/3.jpg',
-  title: 'Sony Dualshock 5',
+  id: 'kxcreoacc',
+  previewImage: 'img/goods/3.jpg',
+  name: 'Sony Dualshock 5',
   price: 6000
 },
 {
-  img: 'img/goods/3.jpg',
-  title: 'Sony Dualshock 5',
+  id: 'jqkthaoeu',
+  previewImage: 'img/goods/3.jpg',
+  name: 'Sony Dualshock 5',
   price: 6000
 },
 {
-  img: 'img/goods/3.jpg',
-  title: 'Sony Dualshock 5',
+  id: 'aotnh,',
+  previewImage: 'img/goods/3.jpg',
+  name: 'Sony Dualshock 5',
   price: 6000
 },
 {
-  img: 'img/goods/3.jpg',
-  title: 'Sony Dualshock 5',
+  id: 'eucrlilrec',
+  previewImage: 'img/goods/3.jpg',
+  name: 'Sony Dualshock 5',
   price: 6000
 }];

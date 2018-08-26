@@ -3,7 +3,7 @@ import React from 'react';
 // Components
 
 import AccentButton from '../../components/accent-button';
-import LayoutControl from '../../components/layout-control';
+import LayoutControl from '../../containers/layout-control';
 import SearchInput from '../../components/search-input';
 import SelectSort from '../../components/select-sort';
 

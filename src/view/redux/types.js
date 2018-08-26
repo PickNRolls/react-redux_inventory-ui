@@ -1,0 +1,5 @@
+const CHANGE_MAIN_LAYOUT = 'CHANGE_MAIN_LAYOUT';
+
+export default {
+  CHANGE_MAIN_LAYOUT
+};

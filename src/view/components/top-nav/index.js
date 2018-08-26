@@ -16,7 +16,6 @@ var isActive = function(currentPage, pageLink) {
 class TopNav extends Component {
   render() {
     var page = this.props.page;
-    console.log(page);
 
     return (
       <ul className={this.props.className}>

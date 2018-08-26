@@ -8,7 +8,7 @@ import Row from './row';
 var Rows = (props) => {
   var goods = props.payload.map((goodsPayload) => {
     return (
-      <Goods payload={goodsPayload} />
+      <Goods payload={goodsPayload} key={goodsPayload.id} />
     );
   });
 
@@ -17,7 +17,7 @@ var Rows = (props) => {
 
   for (var i = 0; i < rowsAmount; i++) {
     rows.push(
-      <Row>
+      <Row key={i}>
         {goods.slice(5 * i, 5 * (i + 1))}
       </Row>
     );
