@@ -55,7 +55,8 @@ export default store;
   Store state
   {
     UI: {
-      layoutView: 0
+      layoutView: 0,
+      activeCategory: 'Электроника'
     },
 
 
