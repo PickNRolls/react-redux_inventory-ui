@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux';
 
-const root = combineReducers({
+import goods from '../view/routes/goods/redux/reducers';
 
+const root = combineReducers({
+  goods
 });
 
 export default root;
