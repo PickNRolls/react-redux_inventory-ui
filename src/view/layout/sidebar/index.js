@@ -9,7 +9,7 @@ import './main.css';
 var Sidebar = (props) => {
   return (
     <aside className="sidebar">
-      <CategoryList />
+      <CategoryList activeCategory={props.activeCategory} />
     </aside>
   );
 }

@@ -16,12 +16,10 @@ class Item extends Component {
       <li className={className}>
         <Link className="item-list__link" to={props.data.route}>
           <div className="item-list__image-wrap">
-            <object
-              type="image/svg+xml"
+            <img
               className="item-list__image"
-              data={props.data.img}
-              alt={props.data.title}
-            >Your browser doesn't support object tag</object>
+              src={props.data.img}
+              alt={props.data.title} />
           </div>
           <div className="item-list__title">
             { title }

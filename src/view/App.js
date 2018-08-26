@@ -9,11 +9,12 @@ import Sidebar from './layout/sidebar';
 
 class App extends Component {
   render() {
+    var category = this.props.match.params.category;
     return (
       <div className="App">
         <AppHeader />
         <SortPanel />
-        <Sidebar />
+        <Sidebar activeCategory={category} />
       </div>
     );
   }

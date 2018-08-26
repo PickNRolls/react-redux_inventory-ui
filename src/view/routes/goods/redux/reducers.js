@@ -2,65 +2,93 @@ import types from './types';
 
 const initialState = {
   UI: {
-    activeCategory: 'Электроника'
+    activeCategory: 'electronic'
   },
 
   goodsById: {},
   goodsIds: [],
 
   categoriesByName: {
-    'Электроника': {
+    'electronic': {
+      title: 'Электроника',
       img: 'img/icons/1.svg',
-      route: '/goods/electonic',
       subcategoriesNames: []
     },
-    'Компьютерная техника': {
+    'computers': {
+      title: 'Компьютерная техника',
       img: 'img/icons/2.svg',
-      route: '/goods/computers',
-      subcategoriesNames: ['Ноутбуки', 'Планшеты']
+      subcategoriesNames: ['laptops', 'tablets']
     },
-    'Бытовая техника': {
+    'appliances': {
+      title: 'Бытовая техника',
       img: 'img/icons/3.svg',
-      route: '/goods/appliances',
-      subcategoriesNames: ['Стиральные машинки']
+      subcategoriesNames: ['washing-machines']
     },
-    'Одежда и обувь': {
+    'clothes': {
+      title: 'Одежда и обувь',
       img: 'img/icons/4.svg',
-      route: '/goods/clothes',
-      subcategoriesNames: ['Футболки', 'Кроссовки', 'Джинсы']
+      subcategoriesNames: ['t-shirts', 'sneakers', 'jeans']
     },
-    'Спорт и отдых': {
+    'sport': {
+      title: 'Спорт и отдых',
       img: 'img/icons/5.svg',
-      route: '/goods/sport',
       subcategoriesNames: []
     },
-    'Мебель': {
+    'furniture': {
+      title: 'Мебель',
       img: 'img/icons/6.svg',
-      route: '/goods/furniture',
-      subcategoriesNames: ['Диваны', 'Кресла']
+      subcategoriesNames: ['sofas', 'chairs']
     },
-    'Автомобили и мотоциклы': {
+    'auto': {
+      title: 'Автомобили и мотоциклы',
       img: 'img/icons/7.svg',
-      route: '/goods/auto',
       subcategoriesNames: []
     },
-    'Досуг и развлечения': {
+    'entertainment': {
+      title: 'Досуг и развлечения',
       img: 'img/icons/8.svg',
-      route: '/goods/entertainment',
-      subcategoriesNames: ['Компьютерные игры']
+      subcategoriesNames: ['computer-games']
     }
   },
 
+
   subcategoriesByName: {
-    'Ноутбуки': ['oe345HTkoetn82Hent'],
-    'Планшеты': [],
-    'Стиральные машинки': [],
-    'Футболки': [],
-    'Кроссовки': [],
-    'Джинсы': [],
-    'Диваны': [],
-    'Кресла': [],
-    'Компьютерные игры': []
+    'laptops': {
+      goodsIds: ['oe345HTkoetn82Hent'],
+      title: 'Ноутбуки'
+    },
+    'tablets': {
+      goodsIds: [],
+      title: 'Планшеты'
+    },
+    'washing-machines': {
+      goodsIds: [],
+      title: 'Стиральные машинки'
+    },
+    't-shirts': {
+      goodsIds: [],
+      title: 'Футболки'
+    },
+    'sneakers': {
+      goodsIds: [],
+      title: 'Кроссовки'
+    },
+    'jeans': {
+      goodsIds: [],
+      title: 'Джинсы'
+    },
+    'sofas': {
+      goodsIds: [],
+      title: 'Диваны'
+    },
+    'chairs': {
+      goodsIds: [],
+      title: 'Стулья'
+    },
+    'computer-games': {
+      goodsIds: [],
+      title: 'Компьютерные игры'
+    }
   }
 };
 

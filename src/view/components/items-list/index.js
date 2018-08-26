@@ -17,7 +17,7 @@ class ItemsList extends Component {
         <Item
           data={{
             ...this.props.items[item],
-            title: item,
+            route: '/goods/' + item,
             active
           }}
           key={item}

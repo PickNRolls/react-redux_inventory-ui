@@ -8,28 +8,22 @@ var LayoutControl = (props) => {
       <button
         className="layout-control__option layout-control__option--active"
         >
-        <object
-          type="image/svg+xml"
+        <img
           className="layout-control__option-icon"
-          data="img/icons/layout-control.svg"
-          alt=""
-        >Your browser doesn't support object tag</object>
+          src="img/icons/layout-control.svg"
+          alt="" />
       </button>
       <button className="layout-control__option">
-        <object
-          type="image/svg+xml"
+        <img
           className="layout-control__option-icon"
-          data="img/icons/layout-control2.svg"
-          alt=""
-        >Your browser doesn't support object tag</object>
+          src="img/icons/layout-control2.svg"
+          alt="" />
       </button>
       <button className="layout-control__option">
-        <object
-          type="image/svg+xml"
+        <img
           className="layout-control__option-icon"
-          data="img/icons/layout-control3.svg"
-          alt=""
-        >Your browser doesn't support object tag</object>
+          src="img/icons/layout-control3.svg"
+          alt="" />
       </button>
     </div>
   );
