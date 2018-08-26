@@ -1,6 +1,7 @@
 .item-list__item {
   width: 230px;
   height: 50px;
+  font-weight: 300;
   line-height: 50px;
   padding-left: 20px;
   border-top-right-radius: 10px;
@@ -9,7 +10,7 @@
 
 .item-list__item--active {
   background: #f4f4fb;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .item-list__link {

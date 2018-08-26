@@ -6,15 +6,18 @@ import './App.css';
 import AppHeader from './layout/app-header';
 import SortPanel from './layout/sort-panel';
 import Sidebar from './layout/sidebar';
+import Main from './layout/main';
 
 class App extends Component {
   render() {
-    var category = this.props.match.params.category;
     return (
-      <div className="App">
+      <div className="App clearfix">
         <AppHeader />
         <SortPanel />
-        <Sidebar activeCategory={category} />
+        <div className="container">
+          <Sidebar />
+          <Main />
+        </div>
       </div>
     );
   }

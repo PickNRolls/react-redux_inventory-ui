@@ -1,18 +1,17 @@
 // View
 
-import React, { Component } from 'react';
 import ItemsList from '../components/items-list';
 
 // Redux
 
 import { connect } from 'react-redux';
 import goodsSelectors from '../routes/goods/redux/selectors';
-import goodsActions from '../routes/goods/redux/actions';
 
 var mapStateToProps = (state, ownProps) => {
+  var category = ownProps.match.params.category;
   return {
     items: goodsSelectors.getCategoryList(state),
-    activeItem: ownProps.activeCategory
+    activeItem: category ? category : 'all'
   };
 };
 

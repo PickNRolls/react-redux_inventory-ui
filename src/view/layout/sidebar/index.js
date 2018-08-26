@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 
 // Components
 
@@ -9,7 +10,9 @@ import './main.css';
 var Sidebar = (props) => {
   return (
     <aside className="sidebar">
-      <CategoryList activeCategory={props.activeCategory} />
+      <Route path="/goods/:category?" component={CategoryList} />
+      <Route path="/people" />
+      <Route path="/places" />
     </aside>
   );
 }

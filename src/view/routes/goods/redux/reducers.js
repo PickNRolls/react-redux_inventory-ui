@@ -1,14 +1,14 @@
 import types from './types';
 
 const initialState = {
-  UI: {
-    activeCategory: 'electronic'
-  },
-
   goodsById: {},
   goodsIds: [],
 
   categoriesByName: {
+    'all': {
+      title: 'Все категории',
+      img: 'img/icons/all.svg'
+    },
     'electronic': {
       title: 'Электроника',
       img: 'img/icons/1.svg',
@@ -94,17 +94,6 @@ const initialState = {
 
 var goods = function(state = initialState, action) {
   switch (action.type) {
-    case types.CHANGE_CATEGORY:
-      if (!state.categoriesByName[action.category])
-        return state;
-
-      return {
-        ...state,
-        UI: {
-          activeCategory: action.category
-        }
-      };
-
     default:
       return state;
   }

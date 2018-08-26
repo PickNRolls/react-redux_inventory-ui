@@ -1,0 +1,38 @@
+.tile-layout {
+  min-height: 590px;
+  padding: 30px;
+  padding-bottom: 0;
+  margin-bottom: -20px;
+}
+
+.tile-layout__row {
+  margin-bottom: 20px;
+}
+
+.tile-layout__row .tile-goods:last-child {
+  margin-right: 0;
+  float: right;
+}
+
+.tile-goods {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  cursor: pointer;
+  margin-right: 27px;
+  float: left;
+}
+
+.tile-goods__img {
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.tile-goods__title {
+  font-weight: 300;
+  margin-bottom: 3px;
+}
+
+.tile-goods__price {
+  color: #b2b2b2;
+}
