@@ -4,13 +4,14 @@ import React from 'react';
 import Rows from './rows';
 
 import './main.css';
-import data from '../data';
 
 var Tile = (props) => {
   return (
-    <div className="tile-layout">
-      <Rows payload={data} />
-    </div>
+    <main className="main">
+      <div className="tile-layout">
+        <Rows payload={props.payload} />
+      </div>    
+    </main>
   );
 };
 

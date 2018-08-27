@@ -1,15 +1,14 @@
 // View
-
 import Main from '../layout/main';
-import layouts from '../layout/main-variants';
 
 // Redux
-
 import { connect } from 'react-redux';
+import { getGoodsArray } from '../../store/goods/selectors';
 
 var mapStateToProps = (state) => {
   return {
-    activeView: state.UI.layoutView.index
+    activeView: state.UI.layoutView.index,
+    goods: getGoodsArray(state)
   };
 };
 
