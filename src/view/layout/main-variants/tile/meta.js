@@ -1,4 +1,4 @@
 export default {
   name: 'tile',
-  img: 'img/icons/layout-control.svg'
+  img: '/img/icons/layout-control.svg'
 };

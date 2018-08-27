@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 // HOC
 import withCustomClassName from '../../HOC/withCustomClassName';
 // Components
 import Item from './item';
+import Sublist from './sublist';
 // Style
 import './main.css';
 
@@ -23,6 +23,17 @@ class ItemsList extends Component {
           key={item}
         />
       );
+
+      var sublist = this.props.sublist;
+      if (sublist && active) {
+        items.push(
+          <Sublist
+            items={sublist}
+            parentRoute={item}
+            key={item + ' sublist'}
+          />
+        );
+      }
     }
 
     return (
@@ -32,11 +43,5 @@ class ItemsList extends Component {
     );
   }
 }
-
-ItemsList.propTypes = {
-  items: PropTypes.object,
-  activeItem: PropTypes.string,
-  className: PropTypes.string
-};
 
 export default withCustomClassName(ItemsList, 'items-list');

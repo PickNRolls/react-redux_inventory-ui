@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 import './App.css';
 
 // Components
@@ -16,7 +17,10 @@ class App extends Component {
         <SortPanel />
         <div className="container">
           <Sidebar />
-          <MainLayout />
+          <Route
+            path='/(goods)?/:category?/:subcategory?'
+            component={MainLayout}
+          />
         </div>
       </div>
     );

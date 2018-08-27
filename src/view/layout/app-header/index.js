@@ -13,8 +13,8 @@ var AppHeader = () => {
     <header className="app-header">
       <div className="container">
         <Link to="/goods" className="app-header__logo">
-          <img src="img/logo.png" alt="Logo"/>
-          <img src="img/Inventory.png" alt="Inventory"/>
+          <img src="/img/logo.png" alt="Logo"/>
+          <img src="/img/Inventory.png" alt="Inventory"/>
         </Link>
 
         <Route path="/:page?" render={(props) => {

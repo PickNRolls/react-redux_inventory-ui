@@ -13,12 +13,12 @@ class ProfileDropdown extends Component {
         <div className="profile-dropdown__view">
           <div className="profile-dropdown__name">Людмила Андропова</div>
           <img
-            src="img/profile-ava.png"
+            src="/img/profile-ava.png"
             className="profile-dropdown__ava"
             alt=""
           />
           <img
-            src="img/icons/arrow.svg"
+            src="/img/icons/arrow.svg"
             alt=""
           />
         </div>

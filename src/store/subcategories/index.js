@@ -1,10 +1,10 @@
 const initialState = {
   'laptops': {
-    goodsIds: ['oe345HTkoetn82Hent'],
+    goodsIds: ['oeukjnt23qh'],
     title: 'Ноутбуки'
   },
   'tablets': {
-    goodsIds: [],
+    goodsIds: ['akcaohtn,.bue'],
     title: 'Планшеты'
   },
   'washing-machines': {
@@ -32,7 +32,7 @@ const initialState = {
     title: 'Стулья'
   },
   'computer-games': {
-    goodsIds: [],
+    goodsIds: ['oaouie21', 'uedo.py.oeua'],
     title: 'Компьютерные игры'
   }
 };
