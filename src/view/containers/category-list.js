@@ -9,9 +9,11 @@ import { getCategoryList } from '../../store/goods/selectors';
 
 var mapStateToProps = (state, ownProps) => {
   var category = ownProps.match.params.category;
+  category = category ? category : 'all';
+
   return {
     items: getCategoryList(state),
-    activeItem: category ? category : 'all'
+    activeItem: category
   };
 };
 

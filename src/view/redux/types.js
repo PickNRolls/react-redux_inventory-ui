@@ -1,1 +1,1 @@
-export const CHANGE_MAIN_LAYOUT = 'CHANGE_MAIN_LAYOUT';
+export const CHANGE_MAIN_LAYOUT = 'view/redux/CHANGE_MAIN_LAYOUT';
