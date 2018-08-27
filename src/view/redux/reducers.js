@@ -1,7 +1,11 @@
 import types from './types';
+import layouts from '../layout/main-variants';
 
 const initialState = {
-  layoutView: 0
+  layoutView: {
+    ...layouts[0],
+    index: 0
+  }
 };
 
 var UI = function(state = initialState, action) {
@@ -9,7 +13,10 @@ var UI = function(state = initialState, action) {
     case types.CHANGE_MAIN_LAYOUT:
       return {
         ...state,
-        layoutView: action.index
+        layoutView: {
+          ...layouts[action.index],
+          index: action.index
+        }
       };
 
     default:

@@ -2,6 +2,7 @@
 
 import OptionsSwitch from '../components/options-switch';
 import UIActions from '../redux/actions';
+import layouts from '../layout/main-variants';
 
 // Redux
 
@@ -9,12 +10,8 @@ import { connect } from 'react-redux';
 
 var mapStateToProps = (state) => {
   return {
-    images: [
-      'img/icons/layout-control.svg',
-      'img/icons/layout-control2.svg',
-      'img/icons/layout-control3.svg'
-    ],
-    activeView: state.UI.layoutView
+    images: layouts.map((meta) => meta.img),
+    activeView: state.UI.layoutView.index
   };
 };
 

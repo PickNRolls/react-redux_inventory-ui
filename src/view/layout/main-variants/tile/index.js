@@ -1,11 +1,9 @@
 import React from 'react';
 
 // Components
-
 import Rows from './rows';
 
 import './main.css';
-
 import data from '../data';
 
 var Tile = (props) => {
@@ -14,6 +12,6 @@ var Tile = (props) => {
       <Rows payload={data} />
     </div>
   );
-}
+};
 
 export default Tile;
