@@ -1,0 +1,46 @@
+.table-layout__header {
+  height: 50px;
+  padding-left: 83px;
+  padding-top: 7px;
+  font-size: 15px;
+}
+
+.table-layout__row {
+  height: 80px;
+  padding: 20px 23px;
+  border-top: 1px solid #ececec;
+}
+
+.table-layout__img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  float: left;
+}
+
+.table-layout__name,
+.table-layout__price,
+.table-layout__photo-amount,
+.table-layout__guarantee,
+.table-layout__purchase-date,
+.table-layout__responsible {
+  padding-top: 8px;
+  float: left;
+}
+
+.table-layout__name {
+  width: 230px;
+}
+
+.table-layout__price {
+  width: 153px;
+}
+
+.table-layout__photo-amount {
+  width: 168px;
+}
+
+.table-layout__guarantee,
+.table-layout__purchase-date {
+  width: 145px;
+}

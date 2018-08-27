@@ -6,7 +6,7 @@ import './App.css';
 import AppHeader from './layout/app-header';
 import SortPanel from './layout/sort-panel';
 import Sidebar from './layout/sidebar';
-import Main from './layout/main';
+import MainLayout from './containers/main-layout';
 
 class App extends Component {
   render() {
@@ -16,7 +16,7 @@ class App extends Component {
         <SortPanel />
         <div className="container">
           <Sidebar />
-          <Main />
+          <MainLayout />
         </div>
       </div>
     );

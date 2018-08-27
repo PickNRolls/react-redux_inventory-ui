@@ -22,15 +22,10 @@
 }
 
 .tile-goods__img {
-  border-radius: 10px;
   margin-bottom: 8px;
 }
 
 .tile-goods__title {
   font-weight: 300;
   margin-bottom: 3px;
-}
-
-.tile-goods__price {
-  color: #b2b2b2;
 }

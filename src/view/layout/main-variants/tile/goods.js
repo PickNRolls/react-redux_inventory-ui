@@ -11,10 +11,10 @@ var GoodsCell = (props) => {
       <img
         src={props.payload.previewImage}
         alt={props.payload.name}
-        className="tile-goods__img"
+        className="main-layouts__img tile-goods__img"
       />
       <span className="tile-goods__title">{props.payload.name}</span>
-      <span className="tile-goods__price">{price} Руб</span>
+      <span className="main-layouts__blur">{price} Руб</span>
     </div>
   );
 }
