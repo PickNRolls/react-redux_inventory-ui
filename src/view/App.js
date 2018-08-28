@@ -15,10 +15,10 @@ class App extends Component {
       <div className="App clearfix">
         <AppHeader />
         <div className="container clearfix">
-          <Sidebar />
+          <Route path="/:route?" component={Sidebar} />
           <SortPanel />
           <Route
-            path='/(goods)?/:category?/:subcategory?'
+            path="/(goods)?/:category?/:subcategory?"
             component={MainLayout}
           />
         </div>

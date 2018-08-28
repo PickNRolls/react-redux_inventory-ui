@@ -7,12 +7,22 @@ import AccentButton from '../../components/accent-button';
 
 import './main.css';
 
+var routeDictionary = {
+  goods: 'предмет',
+  people: 'человека',
+  places: 'место'
+};
+
 var Sidebar = (props) => {
+  var route = props.match.params.route;
+  var whatToAdd = routeDictionary[route];
+
   return (
     <aside className="sidebar">
       <AccentButton className="sidebar__accent-button">
-        Добавить предмет
+        Добавить { whatToAdd }
       </AccentButton>
+
       <Route path="/goods/:category?" render={(props) => {
         return (
           <CategoryList
@@ -21,6 +31,7 @@ var Sidebar = (props) => {
           />
         );
       }} />
+
       <Route path="/people" />
       <Route path="/places" />
     </aside>
