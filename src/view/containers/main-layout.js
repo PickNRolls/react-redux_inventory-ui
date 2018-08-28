@@ -15,6 +15,8 @@ var mapStateToProps = (state, ownProps) => {
     category = params.subcategory;
   } else if (params[0] && params.category) {
     category = params.category;
+  } else if (!params[0] && !params.category) {
+    category = null;
   }
 
   return {
