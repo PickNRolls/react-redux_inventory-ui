@@ -5,7 +5,7 @@ import Rows from './rows';
 
 import './main.css';
 
-var Tile = (props) => {
+var Tile = props => {
   return (
     <main className="main">
       <div className="tile-layout">

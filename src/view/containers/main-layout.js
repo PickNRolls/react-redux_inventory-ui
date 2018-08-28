@@ -27,7 +27,7 @@ var mapStateToProps = (state, ownProps) => {
   };
 };
 
-var mapDispatchToProps = (dispatch) => {
+var mapDispatchToProps = dispatch => {
   return {
     viewGoods(id) {
       dispatch(viewGoods(id));

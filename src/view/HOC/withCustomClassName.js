@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default function(ComponentItself, className) {
+export default (ComponentItself, className) => {
   if (!ComponentItself.prototype.render) {
     throw new Error('Component for HOC withCustomClassName must ' +
       'be class instance.');

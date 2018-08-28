@@ -1,6 +1,6 @@
 import React from 'react';
 
-var Option = (props) => {
+var Option = props => {
   var className = 'options-switch__option';
   if (props.active) className += ' options-switch__option--active';
   return (

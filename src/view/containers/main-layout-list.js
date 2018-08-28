@@ -28,7 +28,6 @@ var mapStateToProps = (state, ownProps) => {
 };
 
 
-
 var ListLayoutContainer = connect(
   mapStateToProps
 )(ListLayout);

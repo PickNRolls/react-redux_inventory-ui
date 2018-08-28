@@ -6,7 +6,7 @@ import Rows from './rows';
 
 import './main.css';
 
-var TableLayout = (props) => {
+var TableLayout = props => {
   return (
     <main className="main">
       <div className="table-layout">

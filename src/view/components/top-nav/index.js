@@ -7,7 +7,7 @@ import withCustomClassName from '../../HOC/withCustomClassName';
 
 import './main.css';
 
-var isActive = function(currentPage, pageLink) {
+var isActive = (currentPage, pageLink) => {
   var is = currentPage === pageLink;
   if (is) return ' top-nav__item--active';
   return '';

@@ -1,9 +1,7 @@
 // View
-
 import ItemsList from '../components/items-list';
 
 // Redux
-
 import { connect } from 'react-redux';
 import { getCategoryList } from '../../store/goods/selectors';
 
@@ -16,7 +14,7 @@ var mapStateToProps = (state, ownProps) => {
     .subcategoriesNames;
 
   if (subcategories) {
-    subcategories = subcategories.map((name) => {
+    subcategories = subcategories.map(name => {
       return {
         title: state.subcategoriesByName[name].title,
         route: name

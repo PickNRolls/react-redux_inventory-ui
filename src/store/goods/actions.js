@@ -2,7 +2,7 @@ import * as types from './types';
 // Unic id
 import v4 from 'uuid/v4';
 
-export function addGoods(payload) {
+export const addGoods = payload => {
   return {
     type: types.ADD_GOODS,
     payload: {
@@ -12,7 +12,7 @@ export function addGoods(payload) {
   };
 };
 
-export function viewGoods(id) {
+export const viewGoods = id => {
   return {
     type: types.VIEW_GOODS,
     id

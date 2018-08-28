@@ -1,12 +1,8 @@
 import * as types from './types';
 
-var changeMainLayout = function(index) {
+export const changeMainLayout = index => {
   return {
     type: types.CHANGE_MAIN_LAYOUT,
     index
   };
-};
-
-export default {
-  changeMainLayout
 };

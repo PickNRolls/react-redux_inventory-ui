@@ -1,10 +1,9 @@
 import React from 'react';
 
 // libs
-
 import prettyPrice from '../../../libs/prettyGoodsPrice';
 
-var GoodsCell = (props) => {
+var GoodsCell = props => {
   var price = prettyPrice(props.payload.price);
   return (
     <div className="tile-goods" onClick={props.onClick}>

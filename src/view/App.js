@@ -3,7 +3,6 @@ import { Route } from 'react-router-dom';
 import './App.css';
 
 // Components
-
 import AppHeader from './layout/app-header';
 import SortPanel from './layout/sort-panel';
 import Sidebar from './layout/sidebar';

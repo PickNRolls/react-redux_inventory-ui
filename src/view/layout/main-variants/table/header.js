@@ -1,6 +1,6 @@
 import React from 'react';
 
-var Header = (props) => {
+var Header = props => {
   return (
     <header className="table-layout__header">
       <div className="main-layouts__blur table-layout__name">

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+// Libs
 import cutString from '../../../libs/cutString';
 
 import './main.css';

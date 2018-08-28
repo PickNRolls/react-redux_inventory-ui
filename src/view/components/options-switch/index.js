@@ -1,12 +1,11 @@
 import React from 'react';
 
 // Components
-
 import Option from './option';
 
 import './main.css';
 
-var OptionsSwitch = (props) => {
+var OptionsSwitch = props => {
   var options = props.images.map((image, index) => {
     return (
       <Option

@@ -8,13 +8,13 @@ import PeopleList from '../../containers/people-list';
 
 import './main.css';
 
-var routeDictionary = {
+const routeDictionary = {
   goods: 'предмет',
   people: 'человека',
   places: 'место'
 };
 
-var Sidebar = (props) => {
+var Sidebar = props => {
   var route = props.match.params.route;
   var whatToAdd = routeDictionary[route];
 

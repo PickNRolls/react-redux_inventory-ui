@@ -1,8 +1,8 @@
-export function getPeople(state) {
+export const getPeople = (state) => {
   return state.people.ids.map(id => state.people.byId[id]);
 };
 
-export function getPeopleForList(state) {
+export const getPeopleForList = (state) => {
   return getPeople(state).map(man => {
     return {
       img: man.avatar,

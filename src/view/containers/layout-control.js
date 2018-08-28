@@ -1,21 +1,19 @@
 // View
-
 import OptionsSwitch from '../components/options-switch';
-import UIActions from '../redux/actions';
+import * as UIActions from '../redux/actions';
 import layouts from '../layout/main-variants';
 
 // Redux
-
 import { connect } from 'react-redux';
 
-var mapStateToProps = (state) => {
+var mapStateToProps = state => {
   return {
-    images: layouts.map((meta) => meta.img),
+    images: layouts.map(meta => meta.img),
     activeView: state.UI.layoutView.index
   };
 };
 
-var mapDispatchToProps = (dispatch) => {
+var mapDispatchToProps = dispatch => {
   return {
     onOptionClick(index) {
       dispatch(UIActions.changeMainLayout(index));

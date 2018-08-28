@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
+
 // HOC
 import withCustomClassName from '../../HOC/withCustomClassName';
+
 // Components
 import Item from './item';
 import Sublist from './sublist';
-// Style
-import './main.css';
 
 
 class ItemsList extends Component {

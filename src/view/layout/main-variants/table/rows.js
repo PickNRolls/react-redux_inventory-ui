@@ -2,8 +2,8 @@ import React from 'react';
 
 import prettyPrice from '../../../libs/prettyGoodsPrice';
 
-var Rows = (props) => {
-  var rows = props.goods.map((goods) => {
+var Rows = props => {
+  var rows = props.goods.map(goods => {
     return (
       <div
         className="table-layout__row"

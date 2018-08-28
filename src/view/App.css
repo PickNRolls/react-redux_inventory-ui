@@ -11,8 +11,6 @@ body {
   background: #F9F9FB;
 }
 
-
-
 .clearfix::after {
   content: '';
   display: table;

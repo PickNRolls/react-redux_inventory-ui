@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
 
-import './main.css';
-
 // Components
-
 import TopNav from '../../components/top-nav';
 import ProfileDropdown from '../../components/profile-dropdown';
+
+import './main.css';
 
 var AppHeader = () => {
   return (

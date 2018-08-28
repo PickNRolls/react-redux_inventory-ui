@@ -3,7 +3,7 @@ import React from 'react';
 // Components
 import Breadcrumb from '../../../components/goods-breadcrumb';
 
-var Body = (props) => {
+var Body = props => {
   var goods = props.viewedGoods;
   var breadcrumb = props.breadcrumb;
 

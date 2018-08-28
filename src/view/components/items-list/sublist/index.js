@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 // Libs
 import cutString from '../../../libs/cutString';
 
-var Sublist = (props) => {
-  var items = props.items.map((item) => {
+var Sublist = props => {
+  var items = props.items.map(item => {
     var route = `/goods/${props.parentRoute}/${item.route}`;
     var className = 'item-sublist__item';
     if (props.active) {

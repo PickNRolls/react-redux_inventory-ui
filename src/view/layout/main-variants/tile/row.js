@@ -1,6 +1,6 @@
 import React from 'react';
 
-var Row = (props) => {
+var Row = props => {
   return (
     <div className="tile-layout__row clearfix">
       {props.children}

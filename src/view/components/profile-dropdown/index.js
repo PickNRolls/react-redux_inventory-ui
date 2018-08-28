@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 // HOC
-
 import withCustomClassName from '../../HOC/withCustomClassName';
 
 import './main.css';

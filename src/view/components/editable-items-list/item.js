@@ -1,6 +1,6 @@
 import React from 'react';
 
-var Item = (props) => {
+var Item = props => {
   var payload = props.payload;
 
   return (

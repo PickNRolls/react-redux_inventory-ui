@@ -8,7 +8,7 @@ const initialState = {
   }
 };
 
-var UI = function(state = initialState, action) {
+const UI = (state = initialState, action) => {
   switch(action.type) {
     case types.CHANGE_MAIN_LAYOUT:
       return {

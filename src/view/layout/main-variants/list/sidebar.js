@@ -3,8 +3,8 @@ import React from 'react';
 // Libs
 import prettyPrice from '../../../libs/prettyGoodsPrice';
 
-var Sidebar = (props) => {
-  var goods = props.goods.map((goods) => {
+var Sidebar = props => {
+  var goods = props.goods.map(goods => {
     var className = 'list-layout__goods';
     if (props.viewedId === goods.id)
       className += ' list-layout__goods--active';

@@ -8,7 +8,7 @@ import ListLayout from '../../containers/main-layout-list';
 import './main.css';
 import '../main-variants/common.css';
 
-var Main = (props) => {
+var Main = props => {
   switch (props.activeView) {
     case 1:
       return (

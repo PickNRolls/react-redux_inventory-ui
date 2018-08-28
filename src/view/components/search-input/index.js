@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 // HOC
-
 import withCustomClassName from '../../HOC/withCustomClassName';
 
 import './main.css';
@@ -24,7 +23,5 @@ class SearchInput extends Component {
     );
   }
 };
-
-window.SearchInput = SearchInput;
 
 export default withCustomClassName(SearchInput, 'search-input-wrap');

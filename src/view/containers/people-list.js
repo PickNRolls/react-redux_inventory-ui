@@ -5,7 +5,7 @@ import EditableItemsList from '../components/editable-items-list';
 import { connect } from 'react-redux';
 import * as selectors from '../../store/people/selectors';
 
-var mapStateToProps = (state) => {
+var mapStateToProps = state => {
   return {
     items: selectors.getPeopleForList(state)
   }

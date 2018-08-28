@@ -6,7 +6,7 @@ import Body from './body';
 
 import './main.css';
 
-var List = (props) => {
+var List = props => {
   return (
     <main className="main">
       <div className="list-layout clearfix">
