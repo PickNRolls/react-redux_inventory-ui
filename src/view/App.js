@@ -14,9 +14,9 @@ class App extends Component {
     return (
       <div className="App clearfix">
         <AppHeader />
-        <SortPanel />
-        <div className="container">
+        <div className="container clearfix">
           <Sidebar />
+          <SortPanel />
           <Route
             path='/(goods)?/:category?/:subcategory?'
             component={MainLayout}

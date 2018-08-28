@@ -6,6 +6,7 @@ import Rows from './rows';
 import './main.css';
 
 var Tile = (props) => {
+  console.log(props);
   return (
     <main className="main">
       <div className="tile-layout">

@@ -1,11 +1,8 @@
 .sort-panel {
-  padding: 20px 0;
-  position: relative;
-}
-
-.sort-panel .container {
   display: flex;
   align-items: center;
+  padding: 20px 0;
+  position: relative;
 }
 
 .sort-panel__accent-button {
@@ -14,8 +11,7 @@
 
 .sort-panel__search-input {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 330px;
 }
 
 .sort-panel__select-sort {
