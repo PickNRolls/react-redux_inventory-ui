@@ -3,8 +3,8 @@ import * as types from './types';
 const initialState = [
   'oeukjnt23qh',
   'oaouie21',
-  'uedo.py.oeua',
-  'akcaohtn,.bue'
+  'akcaohtn,.bue',
+  'uedo.py.oeua'
 ];
 
 export default function ids(state = initialState, action) {

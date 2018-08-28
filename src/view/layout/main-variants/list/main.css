@@ -1,0 +1,42 @@
+.list-layout__sidebar {
+  width: 320px;
+  border-right: 1px solid #e9e9e9;
+  float: left;
+}
+
+.list-layout__body {
+  width: calc(100% - 320px);
+  float: right;
+}
+
+.list-layout__list {
+  padding-top: 20px;
+}
+
+.list-layout__goods {
+  width: 280px;
+  height: 80px;
+  border-radius: 7px;
+  margin: 0 auto 10px;
+}
+
+.list-layout__goods-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 10px 20px 0 10px;
+  float: left;
+}
+
+.list-layout__goods-info {
+  padding-top: 14px;
+}
+
+.list-layout__goods-name,
+.list-layout__goods-price {
+  display: block;
+}
+
+.list-layout__goods-name {
+  margin-bottom: 5px;
+}
