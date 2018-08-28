@@ -6,13 +6,17 @@ import Goods from './goods';
 import Row from './row';
 
 var Rows = (props) => {
-  var goods = props.payload.map((goodsPayload) => {
+  var goods = props.goods.map((goodsPayload) => {
     return (
-      <Goods payload={goodsPayload} key={goodsPayload.id} />
+      <Goods
+        payload={goodsPayload}
+        onClick={() => props.onGoodsClick(goodsPayload.id)}
+        key={goodsPayload.id}
+      />
     );
   });
 
-  var rowsAmount = Math.ceil(props.payload.length / 5);
+  var rowsAmount = Math.ceil(props.goods.length / 5);
   var rows = [];
 
   for (var i = 0; i < rowsAmount; i++) {

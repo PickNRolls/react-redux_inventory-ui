@@ -3,7 +3,7 @@ import React from 'react';
 // Different layouts
 import TileLayout from '../main-variants/tile';
 import TableLayout from '../main-variants/table';
-import ListLayout from '../main-variants/list';
+import ListLayout from '../../containers/main-layout-list';
 
 import './main.css';
 import '../main-variants/common.css';
@@ -11,11 +11,31 @@ import '../main-variants/common.css';
 var Main = (props) => {
   switch (props.activeView) {
     case 1:
-      return <TableLayout payload={props.goods} />;
+      return (
+        <TableLayout
+          goods={props.goods}
+          viewedId={props.viewedId}
+          onGoodsClick={props.viewGoods}
+        />
+      );
+
     case 2:
-      return <ListLayout payload={props.goods} />;
+      return (
+        <ListLayout
+          goods={props.goods}
+          viewedId={props.viewedId}
+          onGoodsClick={props.viewGoods}
+        />
+      );
+
     default:
-      return <TileLayout payload={props.goods} />;
+      return (
+        <TileLayout
+          goods={props.goods}
+          viewedId={props.viewedId}
+          onGoodsClick={props.viewGoods}
+        />
+      );
   }
 }
 

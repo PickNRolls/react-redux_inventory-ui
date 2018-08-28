@@ -6,18 +6,25 @@
 
 .list-layout__body {
   width: calc(100% - 320px);
+  padding: 25px 0 0 20px;
   float: right;
 }
 
 .list-layout__list {
   padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .list-layout__goods {
   width: 280px;
   height: 80px;
   border-radius: 7px;
+  cursor: pointer;
   margin: 0 auto 10px;
+}
+
+.list-layout__goods--active {
+  background: #f7f7f7;
 }
 
 .list-layout__goods-img {
@@ -39,4 +46,18 @@
 
 .list-layout__goods-name {
   margin-bottom: 5px;
+}
+
+.goods-info__name {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.goods-info__breadcrumb {
+  margin-bottom: 15px;
+}
+
+.goods-info__slider {
+  margin-bottom: 25px;
 }

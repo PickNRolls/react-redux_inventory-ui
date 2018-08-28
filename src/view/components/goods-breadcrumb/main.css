@@ -1,0 +1,17 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb__arrow {
+  margin: 2px 7px 0;
+}
+
+.breadcrumb__link {
+  color: #01a9fc;
+  outline: none;
+}
+
+.breadcrumb__link--sub {
+  color: #b2b2b2;
+}

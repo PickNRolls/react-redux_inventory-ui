@@ -5,6 +5,7 @@ import Main from '../layout/main';
 import { connect } from 'react-redux';
 import { getGoodsArray as getGoods } from
   '../../store/goods/selectors';
+import { viewGoods } from '../../store/goods/actions';
 
 var category = null;
 
@@ -21,12 +22,22 @@ var mapStateToProps = (state, ownProps) => {
 
   return {
     activeView: state.UI.layoutView.index,
+    viewedId: state.goods.viewedId,
     goods: getGoods(state, category)
   };
 };
 
+var mapDispatchToProps = (dispatch) => {
+  return {
+    viewGoods(id) {
+      dispatch(viewGoods(id));
+    }
+  };
+};
+
 var MainLayout = connect(
-  mapStateToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(Main);
 
 export default MainLayout;

@@ -9,7 +9,10 @@ var Tile = (props) => {
   return (
     <main className="main">
       <div className="tile-layout">
-        <Rows payload={props.payload} />
+        <Rows
+          goods={props.goods}
+          onGoodsClick={props.onGoodsClick}
+        />
       </div>    
     </main>
   );

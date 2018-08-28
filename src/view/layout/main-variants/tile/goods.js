@@ -7,7 +7,7 @@ import prettyPrice from '../../../libs/prettyGoodsPrice';
 var GoodsCell = (props) => {
   var price = prettyPrice(props.payload.price);
   return (
-    <div className="tile-goods">
+    <div className="tile-goods" onClick={props.onClick}>
       <img
         src={props.payload.previewImage}
         alt={props.payload.name}

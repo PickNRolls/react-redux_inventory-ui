@@ -11,3 +11,10 @@ export function addGoods(payload) {
     }
   };
 };
+
+export function viewGoods(id) {
+  return {
+    type: types.VIEW_GOODS,
+    id
+  };
+};

@@ -9,6 +9,7 @@
   height: 80px;
   padding: 20px 23px;
   border-top: 1px solid #ececec;
+  cursor: pointer;
 }
 
 .table-layout__img {

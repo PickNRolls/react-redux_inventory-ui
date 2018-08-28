@@ -4,9 +4,16 @@ import React from 'react';
 import prettyPrice from '../../../libs/prettyGoodsPrice';
 
 var Sidebar = (props) => {
-  var goods = props.payload.map((goods) => {
+  var goods = props.goods.map((goods) => {
+    var className = 'list-layout__goods';
+    if (props.viewedId === goods.id)
+      className += ' list-layout__goods--active';
+
     return (
-      <li className="list-layout__goods" key={goods.id}>
+      <li
+        className={className}
+        onClick={() => props.onGoodsClick(goods.id)}
+        key={goods.id}>
         <img
           src={goods.previewImage}
           alt={goods.name}

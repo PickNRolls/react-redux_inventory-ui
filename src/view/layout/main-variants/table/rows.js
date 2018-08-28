@@ -3,9 +3,12 @@ import React from 'react';
 import prettyPrice from '../../../libs/prettyGoodsPrice';
 
 var Rows = (props) => {
-  var rows = props.payload.map((goods) => {
+  var rows = props.goods.map((goods) => {
     return (
-      <div className="table-layout__row" key={goods.id}>
+      <div
+        className="table-layout__row"
+        onClick={() => props.onGoodsClick(goods.id)}
+        key={goods.id}>
         <img
           src={goods.previewImage}
           alt={goods.name}
