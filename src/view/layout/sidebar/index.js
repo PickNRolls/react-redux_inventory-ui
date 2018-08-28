@@ -2,8 +2,9 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 
 // Components
-import CategoryList from '../../containers/category-list';
 import AccentButton from '../../components/accent-button';
+import CategoryList from '../../containers/category-list';
+import PeopleList from '../../containers/people-list';
 
 import './main.css';
 
@@ -23,16 +24,20 @@ var Sidebar = (props) => {
         Добавить { whatToAdd }
       </AccentButton>
 
-      <Route path="/goods/:category?" render={(props) => {
-        return (
-          <CategoryList
-            {...props}
-            className="sidebar__category-list"
-          />
-        );
-      }} />
+      <Route path="/goods/:category?" render={props =>
+        <CategoryList
+          {...props}
+          className="sidebar__category-list"
+        />
+      } />
 
-      <Route path="/people" />
+      <Route path="/people" render={props =>
+        <PeopleList
+          {...props}
+          className="sidebar__people-list"
+        />
+      } />
+
       <Route path="/places" />
     </aside>
   );
