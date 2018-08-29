@@ -16,7 +16,9 @@ const routeDictionary = {
 
 var Sidebar = props => {
   var route = props.match.params.route;
-  var whatToAdd = routeDictionary[route];
+  var whatToAdd;
+  if (!route) whatToAdd = routeDictionary.goods;
+  else whatToAdd = routeDictionary[route];
 
   return (
     <aside className="sidebar">
