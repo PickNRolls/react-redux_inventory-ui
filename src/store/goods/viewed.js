@@ -1,6 +1,6 @@
 import * as types from './types';
 
-const initialState = 'oeukjnt23qh';
+const initialState = '';
 
 export default (state = initialState, action) => {
   switch (action.type) {

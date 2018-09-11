@@ -1,14 +1,12 @@
 import * as types from './types';
 
-const initialState = [
-  'oeukjnt23qh',
-  'oaouie21',
-  'akcaohtn,.bue',
-  'uedo.py.oeua'
-];
+const initialState = [];
 
 export default (state = initialState, action) => {
   switch (action.type) {
+    case types.RECEIVE_GOODS:
+      return action.ids;
+
     case types.ADD_GOODS:
       return [
         ...state,

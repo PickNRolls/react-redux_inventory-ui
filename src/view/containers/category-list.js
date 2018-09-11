@@ -3,15 +3,16 @@ import ItemsList from '../components/items-list';
 
 // Redux
 import { connect } from 'react-redux';
-import { getCategoryList } from '../../store/goods/selectors';
+import {
+  getCategoryList,
+  getSubcategoriesOf
+} from '../../store/categories/selectors';
 
 var mapStateToProps = (state, ownProps) => {
   var category = ownProps.match.params.category;
   category = category ? category : 'all';
 
-  var subcategories =
-    state.categoriesByName[category]
-    .subcategoriesNames;
+  var subcategories = getSubcategoriesOf(state, category);
 
   if (subcategories) {
     subcategories = subcategories.map(name => {

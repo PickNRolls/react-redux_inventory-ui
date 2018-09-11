@@ -3,6 +3,10 @@ import React from 'react';
 import prettyPrice from '../../../libs/prettyGoodsPrice';
 
 var Rows = props => {
+  if (props.goods == null) {
+    return null;
+  }
+
   var rows = props.goods.map(goods => {
     return (
       <div

@@ -6,8 +6,12 @@ import { connect } from 'react-redux';
 
 var mapStateToProps = (state, ownProps) => {
   var viewedGoods = state.goods.byId[ownProps.viewedId];
+
+  if (viewedGoods == null) {
+    return {};
+  }
   
-  var subcategory = state.subcategoriesByName[viewedGoods.category];
+  var subcategory = state.subcategoriesByName[viewedGoods.subcategory];
   var subcategoryObj = {
     route: viewedGoods.category,
     title: subcategory.title

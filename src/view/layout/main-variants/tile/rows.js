@@ -5,6 +5,10 @@ import Goods from './goods';
 import Row from './row';
 
 var Rows = props => {
+  if (props.goods == null) {
+    return null;
+  }
+
   var goods = props.goods.map(goodsPayload => {
     return (
       <Goods

@@ -4,6 +4,10 @@ import React from 'react';
 import prettyPrice from '../../../libs/prettyGoodsPrice';
 
 var Sidebar = props => {
+  if (props.goods == null) {
+    return null;
+  }
+
   var goods = props.goods.map(goods => {
     var className = 'list-layout__goods';
     if (props.viewedId === goods.id)

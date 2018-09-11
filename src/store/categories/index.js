@@ -1,3 +1,5 @@
+import * as goodsTypes from '../goods/types';
+
 const initialState = {
   'all': {
     title: 'Все категории',
@@ -12,7 +14,7 @@ const initialState = {
   'computers': {
     title: 'Компьютерная техника',
     img: '/img/icons/2.svg',
-    goodsIds: ['oeukjnt23qh', 'akcaohtn,.bue'],
+    goodsIds: [],
     subcategoriesNames: ['laptops', 'tablets']
   },
   'appliances': {
@@ -48,13 +50,40 @@ const initialState = {
   'entertainment': {
     title: 'Досуг и развлечения',
     img: '/img/icons/8.svg',
-    goodsIds: ['oaouie21', 'uedo.py.oeua'],
+    goodsIds: [],
     subcategoriesNames: ['computer-games']
   }
 };
 
 export default (state = initialState, action) => {
   switch (action.type) {
+    case goodsTypes.RECEIVE_GOODS:
+      var changes = {};
+
+      action.ids.forEach(id => {
+        var c = action.byId[id].category;
+        if (state[c]) {
+          if (changes[c]) changes[c].push(id);
+          else {
+            changes[c] = [id];
+          }
+        }
+      })
+      
+      var nextState = { ...state };
+
+      for (var prop in changes) {
+        nextState = {
+          ...nextState,
+          [prop]: {
+            ...state[prop],
+            goodsIds: changes[prop]
+          }
+        };
+      }
+
+      return nextState;
+
     default:
       return state;
   }

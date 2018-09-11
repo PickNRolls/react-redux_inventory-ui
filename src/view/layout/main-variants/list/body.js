@@ -7,6 +7,10 @@ var Body = props => {
   var goods = props.viewedGoods;
   var breadcrumb = props.breadcrumb;
 
+  if (!goods || !breadcrumb) {
+    return null;
+  }
+
   return (
     <div className="list-layout__body goods-info">
       <span className="goods-info__name">
