@@ -7,14 +7,12 @@ import './main.css';
 
 var Tile = props => {
   return (
-    <main className="main">
-      <div className="tile-layout">
-        <Rows
-          goods={props.goods}
-          onGoodsClick={props.onGoodsClick}
-        />
-      </div>    
-    </main>
+    <div className="tile-layout">
+      <Rows
+        goods={props.goods}
+        onGoodsClick={props.onGoodsClick}
+      />
+    </div>
   );
 };
 

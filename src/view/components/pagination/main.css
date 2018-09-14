@@ -1,0 +1,29 @@
+.pagination__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #f0f0f0;
+  color: #606060;
+  font-size: 18px;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  margin-right: 10px;
+}
+
+.pagination__button:last-child {
+  margin-right: 0;
+}
+
+.pagination__button::-moz-focus-inner {
+  border: 0;
+}
+
+.pagination__button--current {
+  color: #01a9fc;
+  background: #fff;
+}
+
+.pagination__arrow-img--next {
+  transform: rotate(180deg);
+}
