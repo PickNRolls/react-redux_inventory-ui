@@ -1,3 +1,7 @@
+.table-layout {
+  min-height: 530px;
+}
+
 .table-layout__header {
   height: 50px;
   padding-left: 83px;
