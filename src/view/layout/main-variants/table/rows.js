@@ -2,6 +2,8 @@ import React from 'react';
 
 import prettyPrice from '../../../libs/prettyGoodsPrice';
 
+const MAX_ROWS_PER_PAGE = 6;
+
 var Rows = props => {
   if (props.goods == null) {
     return null;
@@ -46,7 +48,12 @@ var Rows = props => {
     );
   });
 
-  return rows;
+  var currentPage = props.currentPage - 1;
+  var startIndex = currentPage * MAX_ROWS_PER_PAGE;
+  var lastIndex = startIndex + MAX_ROWS_PER_PAGE;
+  var renderedRows = rows.slice(startIndex, lastIndex);
+
+  return renderedRows;
 }
 
 export default Rows;

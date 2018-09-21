@@ -13,6 +13,7 @@ var TableLayout = props => {
       <Rows
         goods={props.goods}
         onGoodsClick={props.onGoodsClick}
+        currentPage={props.currentPage}
       />
     </div>
   );
