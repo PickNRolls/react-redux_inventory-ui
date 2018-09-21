@@ -13,6 +13,7 @@ var List = props => {
         goods={props.goods}
         viewedId={props.viewedId}
         onGoodsClick={props.onGoodsClick}
+        currentPage={props.currentPage}
       />
       <Body
         goods={props.goods}

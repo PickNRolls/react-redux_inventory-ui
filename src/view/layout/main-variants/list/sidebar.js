@@ -3,6 +3,8 @@ import React from 'react';
 // Libs
 import prettyPrice from '../../../libs/prettyGoodsPrice';
 
+const MAX_GOODS_PER_PAGE = 6;
+
 var Sidebar = props => {
   if (props.goods == null) {
     return null;
@@ -36,10 +38,15 @@ var Sidebar = props => {
     );
   });
 
+  var currentPage = props.currentPage - 1;
+  var startIndex = currentPage * MAX_GOODS_PER_PAGE;
+  var lastIndex = startIndex + MAX_GOODS_PER_PAGE;
+  var renderedGoods = goods.slice(startIndex, lastIndex);
+
   return (
     <aside className="list-layout__sidebar">
       <ul className="list-layout__list">
-        { goods }
+        { renderedGoods }
       </ul>
     </aside>
   );
