@@ -1,7 +1,7 @@
 .tile-layout {
   min-height: 570px;
   padding: 30px;
-  padding-bottom: 5px;
+  padding-bottom: 0;
 }
 
 .tile-layout__row {

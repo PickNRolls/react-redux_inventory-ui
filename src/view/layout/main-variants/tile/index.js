@@ -1,19 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 // Components
 import Rows from './rows';
 
 import './main.css';
 
-var Tile = props => {
-  return (
-    <div className="tile-layout">
-      <Rows
-        goods={props.goods}
-        onGoodsClick={props.onGoodsClick}
-      />
-    </div>
-  );
+class Tile extends Component {
+  render() {
+    var { props } = this;
+
+    return (
+      <div className="tile-layout">
+        <Rows
+          goods={props.goods}
+          onGoodsClick={props.onGoodsClick}
+          currentPage={props.currentPage}
+        />
+      </div>
+    );
+  }
 };
 
 export default Tile;

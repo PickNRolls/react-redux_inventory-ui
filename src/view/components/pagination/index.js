@@ -16,9 +16,23 @@ class Pagination extends Component {
     };
 
     this.changeCurrent = this.changeCurrent.bind(this);
+    this.stepTo = this.stepTo.bind(this);
+  }
+
+  stepTo(direction) {
+    // 0 - left, 1 - right
+
+    if (this.state.current === 1 && direction === 0) return;
+
+    if (direction === 1)
+      return this.changeCurrent(this.state.current + 1);
+
+    if (direction === 0)
+      return this.changeCurrent(this.state.current - 1);
   }
 
   changeCurrent(pageIndex) {
+    this.props.onChange(pageIndex);
     this.setState({
       current: pageIndex
     });
@@ -42,7 +56,10 @@ class Pagination extends Component {
 
     return (
       <div className={this.props.className}>
-        <button className="pagination__button">
+        <button
+          className="pagination__button"
+          onClick={() => this.stepTo(0)}
+          >
           <img
             src="/img/icons/back.png"
             alt=""
@@ -52,7 +69,10 @@ class Pagination extends Component {
 
         { buttons }
 
-        <button className="pagination__button">
+        <button
+          className="pagination__button"
+          onClick={() => this.stepTo(1)}
+          >
           <img
             src="/img/icons/back.png"
             alt=""
