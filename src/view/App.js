@@ -7,6 +7,7 @@ import AppHeader from './layout/app-header';
 import SortPanel from './layout/sort-panel';
 import Sidebar from './layout/sidebar';
 import MainLayout from './containers/main-layout';
+import PopupsCollection from './containers/popups-collection';
 
 class App extends Component {
   render() {
@@ -21,6 +22,8 @@ class App extends Component {
             component={MainLayout}
           />
         </div>
+
+        <PopupsCollection/>
       </div>
     );
   }

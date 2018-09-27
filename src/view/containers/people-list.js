@@ -11,7 +11,6 @@ var mapStateToProps = state => {
   }
 };
 
-
 var PeopleList = connect(
   mapStateToProps
 )(EditableItemsList);

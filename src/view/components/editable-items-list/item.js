@@ -4,7 +4,7 @@ var Item = props => {
   var payload = props.payload;
 
   return (
-    <li className="editable-items-list__item">
+    <li className="editable-items-list__item" onClick={props.onClick}>
       <img
         className="editable-items-list__img"
         src={payload.img}

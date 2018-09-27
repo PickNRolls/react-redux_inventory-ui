@@ -5,7 +5,9 @@ const initialState = {
   layoutView: {
     ...layouts[0],
     index: 0
-  }
+  },
+  popupIsEnabled: false,
+  popupIndex: 0
 };
 
 const UI = (state = initialState, action) => {
@@ -17,6 +19,18 @@ const UI = (state = initialState, action) => {
           ...layouts[action.index],
           index: action.index
         }
+      };
+
+    case types.CHANGE_POPUP_VISIBILITY:
+      return {
+        ...state,
+        popupIsEnabled: action.isEnabled
+      };
+
+    case types.SWITCH_POPUP:
+      return {
+        ...state,
+        popupIndex: action.index
       };
 
     default:
