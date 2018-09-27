@@ -41,7 +41,8 @@ var mapStateToProps = (state, ownProps) => {
   return {
     activeView: state.UI.layoutView.index,
     viewedId: state.goods.viewedId,
-    goods: getGoods(state, category)
+    goods: getGoods(state, category),
+    loading: state.UI.layoutView.loading
   };
 };
 

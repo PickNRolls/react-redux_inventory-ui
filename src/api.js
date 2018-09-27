@@ -5,7 +5,7 @@ var delay = ms => {
 };
 
 export const fetchGoods = category => {
-  return delay(1000).then(() => {
+  return delay(2000).then(() => {
     return {
       byId: {
         'oeukjnt23qh': {

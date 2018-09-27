@@ -1,10 +1,14 @@
 import * as types from './types';
 import layouts from '../layout/main-variants';
 
+// Outer types
+import * as goodsTypes from '../../store/goods/types';
+
 const initialState = {
   layoutView: {
     ...layouts[0],
-    index: 0
+    index: 0,
+    loading: true
   },
   popupIsEnabled: false,
   popupIndex: 0
@@ -31,6 +35,14 @@ const UI = (state = initialState, action) => {
       return {
         ...state,
         popupIndex: action.index
+      };
+
+    case goodsTypes.RECEIVE_GOODS:
+      return {
+        ...state,
+        layoutView: {
+          loading: false
+        }
       };
 
     default:
