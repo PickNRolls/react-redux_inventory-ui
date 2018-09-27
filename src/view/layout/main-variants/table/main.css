@@ -1,5 +1,6 @@
 .table-layout {
   min-height: 530px;
+  position: relative;
 }
 
 .table-layout__header {

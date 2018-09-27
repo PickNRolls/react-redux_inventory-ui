@@ -3,10 +3,18 @@ import React from 'react';
 // Components
 import Sidebar from './sidebar';
 import Body from './body';
+import Loader from '../../../components/data-loader';
 
 import './main.css';
 
 var List = props => {
+  if (props.loading)
+  return (
+    <div className="list-layout list-layout--loading clearfix">
+      <Loader />
+    </div>
+  );
+
   return (
     <div className="list-layout clearfix">
       <Sidebar

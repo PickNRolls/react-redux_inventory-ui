@@ -7,7 +7,6 @@ import ListLayout from '../../containers/main-layout-list';
 
 // Components
 import Pagination from '../../components/pagination';
-import Loader from '../../components/data-loader';
 
 import './main.css';
 import '../main-variants/common.css';
@@ -32,42 +31,42 @@ class Main extends Component {
     var { props } = this;
     var selectedView = null;
 
-    if (props.loading) selectedView = <Loader />;
-    else {
-      switch (props.activeView) {
-        case 1:
-          selectedView = (
-            <TableLayout
-              goods={props.goods}
-              viewedId={props.viewedId}
-              onGoodsClick={props.viewGoods}
-              currentPage={this.state.currentPage}
-            />
-          );
-          break;
+    switch (props.activeView) {
+      case 1:
+        selectedView = (
+          <TableLayout
+            goods={props.goods}
+            viewedId={props.viewedId}
+            onGoodsClick={props.viewGoods}
+            currentPage={this.state.currentPage}
+            loading={props.loading}
+          />
+        );
+        break;
 
-        case 2:
-          selectedView = (
-            <ListLayout
-              goods={props.goods}
-              viewedId={props.viewedId}
-              onGoodsClick={props.viewGoods}
-              currentPage={this.state.currentPage}
-            />
-          );
-          break;
+      case 2:
+        selectedView = (
+          <ListLayout
+            goods={props.goods}
+            viewedId={props.viewedId}
+            onGoodsClick={props.viewGoods}
+            currentPage={this.state.currentPage}
+            loading={props.loading}
+          />
+        );
+        break;
 
-        default:
-          selectedView = (
-            <TileLayout
-              goods={props.goods}
-              viewedId={props.viewedId}
-              onGoodsClick={props.viewGoods}
-              currentPage={this.state.currentPage}
-            />
-          );
-          break;
-      }
+      default:
+        selectedView = (
+          <TileLayout
+            goods={props.goods}
+            viewedId={props.viewedId}
+            onGoodsClick={props.viewGoods}
+            currentPage={this.state.currentPage}
+            loading={props.loading}
+          />
+        );
+        break;
     }
 
     return (

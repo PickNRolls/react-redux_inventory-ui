@@ -17,9 +17,11 @@ const initialState = {
 const UI = (state = initialState, action) => {
   switch(action.type) {
     case types.CHANGE_MAIN_LAYOUT:
+      var lv = state.layoutView;
       return {
         ...state,
         layoutView: {
+          ...lv,
           ...layouts[action.index],
           index: action.index
         }
@@ -38,9 +40,11 @@ const UI = (state = initialState, action) => {
       };
 
     case goodsTypes.RECEIVE_GOODS:
+      lv = state.layoutView;
       return {
         ...state,
         layoutView: {
+          ...lv,
           loading: false
         }
       };
