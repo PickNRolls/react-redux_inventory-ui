@@ -23,6 +23,7 @@ class Pagination extends Component {
     // 0 - left, 1 - right
 
     if (this.state.current === 1 && direction === 0) return;
+    if (this.state.current === this.pagesAmount && direction === 1) return;
 
     if (direction === 1)
       return this.changeCurrent(this.state.current + 1);
@@ -41,7 +42,8 @@ class Pagination extends Component {
   render() {
     var { props } = this;
     var buttons = [];
-    for (var i = 0, count = props.pagesAmount; i < count; i++) {
+    this.pagesAmount = Math.ceil(props.itemsAmount / props.itemsPerPage);
+    for (var i = 0; i < this.pagesAmount; i++) {
       let inner = i + 1;
 
       buttons.push(

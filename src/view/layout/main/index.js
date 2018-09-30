@@ -11,6 +11,12 @@ import Pagination from '../../components/pagination';
 import './main.css';
 import '../main-variants/common.css';
 
+var layoutItemsPerPage = {
+  tile: 10,
+  table: 6,
+  list: 6
+};
+
 class Main extends Component {
   constructor(props) {
     super(props);
@@ -30,6 +36,7 @@ class Main extends Component {
   render() {
     var { props } = this;
     var selectedView = null;
+    var itemsPerPage = null;
 
     switch (props.activeView) {
       case 1:
@@ -42,6 +49,7 @@ class Main extends Component {
             loading={props.loading}
           />
         );
+        itemsPerPage = layoutItemsPerPage.table;
         break;
 
       case 2:
@@ -54,6 +62,7 @@ class Main extends Component {
             loading={props.loading}
           />
         );
+        itemsPerPage = layoutItemsPerPage.list;
         break;
 
       default:
@@ -66,6 +75,7 @@ class Main extends Component {
             loading={props.loading}
           />
         );
+        itemsPerPage = layoutItemsPerPage.tile;
         break;
     }
 
@@ -77,7 +87,8 @@ class Main extends Component {
         <Pagination
           onChange={this.changePage}
           className="main__pagination"
-          pagesAmount="3" />
+          itemsPerPage={itemsPerPage}
+          itemsAmount={props.goods.length} />
       </div>
     );
   }
