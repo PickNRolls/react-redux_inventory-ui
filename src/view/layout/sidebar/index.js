@@ -30,11 +30,16 @@ const routeDictionary = {
 var Sidebar = props => {
   var route = props.route;
   var whatToAdd;
-  if (!route) whatToAdd = routeDictionary.goods.str;
-  else whatToAdd = routeDictionary[route].str;
+  if (!route) {
+    whatToAdd = routeDictionary.goods.str;
+    props.switchPopup(routeDictionary.goods.popupIndex);
+  }
+  else {
+    whatToAdd = routeDictionary[route].str;
+    props.switchPopup(routeDictionary[route].popupIndex);
+  }
 
   props.closePopup();
-  props.switchPopup(routeDictionary[route].popupIndex);
 
   return (
     <aside className="sidebar">
